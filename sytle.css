@@ -26,6 +26,7 @@ body{
      border: none;
      background-color:#cfd4d8c7 ;
      border-radius: 10px;
+     box-shadow: 4px 8px 10px rgba(0, 0, 0, 0.4);
  }
  legend{
      font-size: 24px;
@@ -49,6 +50,7 @@ body{
      margin-top: 5px;
      margin-bottom: 30px;
      box-sizing: border-box;
+     box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
  
  }
   select, textarea:hover{

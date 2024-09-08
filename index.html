@@ -3,63 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>my web</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax//font-awesome/libs6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <title>Dynamic Resume Builder</title>
+    <link rel="stylesheet" href="sytle.css">
 </head>
-<body><div>
-    <p>logo</p>
-    <p>About US</p>
-    <p>Designer</p>
-   <P>Features</P>
-   <P>News</P>
-</div>
+<body>
+    <h1>Milestone 3: Dynamic Resume Builder</h1>
+    <form id="form">
+        <fieldset class="fieldset">
+            <legend>Personal Information</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
 
-<div>
-    <div>
-        <p>ul ux DESIGN AGENCY</p>
-        <h1>Make Digital </h1>
-        <p> <b style="color: red;">Product  </b> with our Agency</p>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit, maxime possimus adipisci laboriosam, 
-            dicta excepturi quasi nobis quibusdam ullam delectus
-             impedit. Optio, molestiae exercitationem. Repellendus magni facilis rem vel ratione.</p>
-             <div>
-                <div> 
-                    <button>Learn more</button>
-                    <link rel="stylesheet" href="www">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
 
-                </div>
-                <div>
-                    <p>fa</p>
-                </div>
-             </div>
-    </div>
-    <div>
-        <img src="" alt="">
-    </div>
-</div>
-<video src=""></video>
-<form action="">
+            <label for="phone">Phone:</label>
+            <input type="number" id="phone" name="phone" required><br>
 
-    <h1>contact us</h1>
-    <input type="text" placeholder="Enter your Name">
-    <label for="name"> <i class="ri-user-3-line"></i></label>
-    <br><br>
-    <input type="number" placeholder="Enter your phone Number">
-    <label for="number"> <i class="ri-phone-line"></i> </label><br><br>
+            <!-- Profile Picture Upload -->
+            <label for="profilePic">Profile Picture:</label>
+            <input type="file" id="profilePic" name="profilePic" accept="image/*"><br><br>
+        </fieldset>
 
-    <input type="email" placeholder="Enter your email">
-    <label for="email"> <i class="ri-mail-star-line"></i></label>
-    <br><br>
- 
+        <fieldset class="fieldset">
+            <legend>Education</legend>
+            <label for="education">Education</label>
+            <textarea id="education" name="education" rows="5" required></textarea><br>
+        </fieldset>
 
-    <textarea name="textarea" id="" rows="7" placeholder="Enter your massage"></textarea>
-    <label for="message"> <i class="ri-message-2-line"></i></label><br> <br>
-    
-    <button>smit</button><br><br>
-    <h1>Thank You</h1>
+        <fieldset class="fieldset">
+            <legend>Experience</legend>
+            <label for="experience">Experience</label>
+            <textarea id="experience" name="experience" rows="5" required></textarea><br>
+        </fieldset>
 
-</form>
-    
+        <fieldset class="fieldset">
+            <legend>Skills</legend>
+            <label for="skills">Skills</label>
+            <textarea id="skills" name="skills" rows="5" required></textarea><br>
+        </fieldset>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <div id="resume-output" class="resume-output"></div>
+
+    <script src="app.js" type="module"></script>
 </body>
 </html>
