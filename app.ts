@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const name = (document.getElementById('name') as HTMLInputElement).value;
         const email = (document.getElementById('email') as HTMLInputElement).value;
         const phone = (document.getElementById('phone') as HTMLInputElement).value;
+        const address = (document.getElementById('address') as HTMLInputElement).value;
         const education = (document.getElementById('education') as HTMLTextAreaElement).value;
         const experience = (document.getElementById('experience') as HTMLTextAreaElement).value;
         const skills = (document.getElementById('skills') as HTMLTextAreaElement).value;
@@ -39,7 +40,8 @@ document.addEventListener('DOMContentLoaded', () => {
         function generateResume(imageURL: string): void {
             let imageHTML = '';
             if (imageURL) {
-                imageHTML = `<img src="${imageURL}" alt="Profile Picture" style="width:150px;height:150px;border-radius:50%;"><br><br>`;
+                imageHTML = `<img src="${imageURL}" alt="Profile Picture" style="width:150px;height:150px;border-radius:50%;">
+                <br><br>`;
             }
 
             // Generate the dynamic resume
@@ -48,6 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <h2>${name}</h2>
                 <p><strong>Email:</strong> ${email}</p>
                 <p><strong>Phone:</strong> ${phone}</p>
+                <p><strong>address:</strong> ${address}</p>
 
                 <h3>Education</h3>
                 <p>${education}</p>
